@@ -1,11 +1,52 @@
-
+#palo{
+    background-color: black;
+    width:15px;
+    height: 60px;
+    margin: auto;
+    position: relative;
+    }
+#trafficLights{
+    background-color: black;
+    width: 110px;
+    height: 300px;
+    margin: auto;
+    border-radius: 8%;
+    position: relative
+}
+#redLight{
+    background-color: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 4%;
+}
+#yellowLight{
+    background-color: yellow;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;		
+    margin-left: 4%
+}
+#greenLight{
+    background-color: green;
+    margin-left: 4%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.selected{
+    color: #ffa;
+    text-shadow: 0 0 30px #fff;
+}
 /* 
 
     You can write your own styles here...
     
     
     ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
+    other sylesheets into your bunde as well; e.j:
     
     import 'relative/path/to/stylesheet.scss';
 
