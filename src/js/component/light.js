@@ -1,20 +1,14 @@
 import React from "react";
 
-const Light = () => {
+const Light = (props) => {
 
-    return (
-        <div className="Semaforo">
-        <div id="palo"></div>
-        <div id="trafficLights">
-            <div id="redLight">
-            </div>
-            <div id="yellowLight">
-            </div>
-            <div id="greenLight">
-            </div>
-        </div>
-    </div>
-    )
+    const onOff = () => {
+        props.setStateLight({...props.stateLight, [props.color]: props.stateLight[props.color] === "off" ? "on" : "off"})
+    }
+
+    return (<button className={`Light ${props.style}`} onClick={() => {onOff()}}>
+            </button>
+        )
 }
 
 export default Light
