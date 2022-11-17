@@ -2,13 +2,12 @@ import React from "react";
 
 const Light = (props) => {
 
-    const onOff = () => {
-        props.setStateLight({...props.stateLight, [props.color]: props.stateLight[props.color] === "off" ? "on" : "off"})
-    }
+    if (props.style === "redOn"){
+        
+    }  
+       
 
-    return (<button className={`Light ${props.style}`} onClick={() => {onOff()}}>
-            </button>
-        )
+    return ()
 }
 
 export default Light
