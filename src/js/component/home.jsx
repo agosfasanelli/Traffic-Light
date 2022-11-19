@@ -16,16 +16,13 @@ const Home = () => {
 			<div id="palo"></div>
 			<div id="trafficLights">
 				<Light 
-				style={stateLight.red== "off" ? "red" : "redOn"} 
-				color = {"red"}
+				 
 				/>
 				<Light 
-				style={stateLight.yellow== "off" ? "yellow" : "yellowOn"} 
-				color = {"yellow"}
+				
 				/>
 				<Light 
-				style={stateLight.green== "off" ? "green" : "greenOn"} 
-				color = {"green"}
+				
 				/>
 			</div>
     	</div>
