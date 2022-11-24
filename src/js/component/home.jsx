@@ -1,8 +1,5 @@
 import React, {useState} from "react";
 
-//include images into your bundle
-
-//create your first component
 const Home = () => {
 
 	const [red, sertRed] = useState("red")
@@ -28,15 +25,24 @@ const Home = () => {
 		<div className="container">
 			<div className="palo"></div>
 			<div className="trafficLights">
-			<div class="text-center">
-				<button onClick={handleClick1}className={red}></button>
-			</div>
-			<div class="text-center">
-				<button onClick={handleClick2}className={yellow}></button>
-			</div>
-			<div class="text-center">
-				<button onClick={handleClick3}className={green}></button>
-			</div>
+				<div class="text-center">
+					<button 
+					onClick={handleClick1}
+					className={red}>
+					</button>
+				</div>
+				<div class="text-center">
+					<button 
+					onClick={handleClick2}
+					className={yellow}>
+					</button>
+				</div>
+				<div class="text-center">
+					<button 
+					onClick={handleClick3}
+					className={green}>
+					</button>
+				</div>
 			</div>
 			</div>
 		
